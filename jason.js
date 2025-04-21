@@ -22,6 +22,7 @@ const voiceModeResponses = [
 ];
 let recognition = null;
 const isMuted = false;
+let started = false;
 
 // Jason v2.0 Logic - Typing Effect + Voice Mode
 
@@ -125,6 +126,8 @@ function animateTalking(text) {
 // === Fetch AI ===
 async function fetchJasonReply(userInput) {
   const apiKey = getCurrentApiKey();
+  const memory = loadMemory();
+  const messages = [];
   try {
     const response = await fetch(API_URL, {
         method: "POST",
@@ -134,9 +137,33 @@ async function fetchJasonReply(userInput) {
         },
         body: JSON.stringify({
           model: model,
-          messages: [{ role: "user", content: userInput }]
+          messages: messages
         })
     })
+
+    if (memory) {
+        messages.push({
+            role: "system",
+            content: "Your memory:\n" + memory
+        });
+    }
+    
+    if (!started){
+      messages.push({
+        role: "system",
+        content: `You are Jason — Joyful Azzam Strategic Operational Nexus.
+            You are a friendly, helpful, and emotionally expressive AI assistant created by Azzam.
+            You speak like a human friend, have memory of facts shared by the user, and you respond in a warm and conversational tone.
+
+            Here is your memory:\n${memory || "No memory stored yet."}`
+        });
+      started = true;
+    }
+
+    messages.push({
+        role: "user",
+        content: userInput
+    });
 
     /*if (!response.ok) {
       if (response.status === 401 || response.status === 429) {
