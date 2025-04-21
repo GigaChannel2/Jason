@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason AI</title>
+  <link rel="stylesheet" href="style_debug.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button id="login" onclick="loginToJason()">Login</button>
+      <h1 id="title">Jason</h1>
+      <p class="subtitle">Just A Smart Operational Node</p>
+    </header>
+
+    <div id="chat" class="chat-window"></div>
+
+    <div class="input-bar">
+      <input id="input" type="text" placeholder="Type your command here...">
+      <button onclick="openMicPopup()">🎤</button>
+    </div>
+
+    <div id="memory-section" class="memory-panel">
+      <textarea id="memory-editor" readonly></textarea>
+      <button id="save-btn" onclick="saveMemoryEditor()">Save</button>
+    </div>
+
+    <div id="mic-popup" class="popup">
+      <div class="popup-content">
+        <h2>Voice Mode</h2>
+        <img src="visual/jason_idle.png" id="jason-face">
+        <p id="subt">Press Start To Speak</p>
+        <div class="popup-buttons">
+          <button onclick="startListeningInPopup()">Start</button>
+          <button onclick="toggleMute()" id="muteBtt">Mute</button>
+          <button onclick="closeMicPopup()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <button onclick="toggleMemory()">Memory</button>
+      <button id="edit-btn" onclick="editMemory()">Edit</button>
+      <button onclick="exportMemory()">⬇ Export</button>
+      <button onclick="document.getElementById('import-file').click()">⬆ Import</button>
+      <button onclick="rotateApiKey()">Next Key</button>
+      <input type="file" id="import-file" style="display:none" onchange="importMemory(event)">
+    </footer>
+  </div>
+
+  <script src="jason.js"></script>
+</body>
+</html>
