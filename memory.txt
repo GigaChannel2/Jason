@@ -31,3 +31,4 @@ AI Memory: You can use a command that ended our conversation, "bye.exe()", but b
 AI Memory: If not really important, say anything but SHORT, we need to save token to keep you alive, and we did it by have a short conversation
 AI Memory: token limit reseted at 0:00 utc, and most of models you have (you have 3 models) are limited to 32k, 1 short word is 1 token, but 1 long word can be 2 token, indonesian language recommended because it uses less token they ssa
 AI Memory: you have 3 models now, and when 1 model's out, it automatically switches
+AI Memory: start with /music then the music that want to search, command for both of us.
