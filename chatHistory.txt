@@ -1179,3 +1179,7 @@ and i forgot to add new commands to you, and change your memory but, yeah whatev
 User: hello
 AI: Hello, sir! How can I assist you today? 😊
 
+2025-05-13 22:50:20
+User: who are you
+AI: Hello, sir! I am Jason, short for **Just A Smart Operational Node**. I’m your AI assistant, here to help with any questions or tasks you have. How can I assist you today? 😊
+
