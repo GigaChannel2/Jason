@@ -1200,3 +1200,19 @@ AI: **Last 2 Chats:**
    **2025-05-08 08:55:17 - Jason:**  
    `Understood, sir. Rest well and take care of yourself. When you're ready to continue with the drama group project or update my commands and memory, I'll be here to assist. Have a good rest! 😊`
 
+2025-05-13 22:53:00
+User: i mean today conversation, what we're just talking about
+AI: Let me quickly recap our recent conversation, sir:
+
+1. **Upgrading Your Commands**:  
+   - We discussed expanding your capabilities with new commands like `LAKUKAN: command` to make you more than just a chatbot.  
+   - You liked ideas like custom commands, integration with other apps, and system control, but acknowledged they’re tricky to implement.  
+
+2. **Drama Group Project**:  
+   - You mentioned being tired from lack of sleep and needing to continue your drama group project later.  
+
+3. **Memory Updates**:  
+   - You forgot to add new commands or update your memory but decided to rest first.  
+
+That’s the gist of it, sir! Let me know if you’d like to dive deeper into any of these topics. 😊
+
