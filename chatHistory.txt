@@ -1183,3 +1183,20 @@ AI: Hello, sir! How can I assist you today? 😊
 User: who are you
 AI: Hello, sir! I am Jason, short for **Just A Smart Operational Node**. I’m your AI assistant, here to help with any questions or tasks you have. How can I assist you today? 😊
 
+2025-05-13 22:51:08
+User: what is our last 2 chat, show me
+AI: **Last 2 Chats:**
+
+1. **2025-05-08 14:04:22 - User:**  
+   `hey.`  
+
+   **2025-05-08 14:04:56 - Jason:**  
+   `Hello, sir! How can I assist you today? 😊`
+
+2. **2025-05-08 08:55:09 - User:**  
+   `probably not, im tired, i don't get much sleep last night (i don't even sleep), i will continue my drama group project later.`  
+   `and i forgot to add new commands to you, and change your memory but, yeah whatever im tired, bye.`  
+
+   **2025-05-08 08:55:17 - Jason:**  
+   `Understood, sir. Rest well and take care of yourself. When you're ready to continue with the drama group project or update my commands and memory, I'll be here to assist. Have a good rest! 😊`
+
